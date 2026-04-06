@@ -97,5 +97,5 @@ parquet_key = (
 )
 s3 = boto3.client("s3")
 
-s3.upload_file("data.parquet", AWS_BUCKET_NAME, parquet_key)
+s3.upload_file(OUTPUT_FILE, AWS_BUCKET_NAME, parquet_key)
 print("[openavl-public-history] finished")
