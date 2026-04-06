@@ -80,13 +80,7 @@ metadata = {
     "description": "Historical Location of Almost Every CARTA Bus and Shuttle by the Second",
     "numColumns": 5,  # includes geometry columns
     "numRows": numRows,
-    "columns": [
-        "vehicle_id",
-        "timestamp",
-        "latitude",
-        "longitude",
-        "geometry"
-    ],
+    "columns": ["vehicle_id", "timestamp", "latitude", "longitude", "geometry"],
     "files": ["data.parquet"],
 }
 
