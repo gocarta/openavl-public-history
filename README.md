@@ -2,6 +2,10 @@
 # openavl-public-history
 Work in Progress: Location History of Almost All CARTA Buses and Shuttles!
 
+<img width="476" height="280" alt="image" src="https://github.com/user-attachments/assets/8ce66d2f-6b61-4e76-84fc-34f875057e39" />  
+
+*Dataset Loaded into QGIS with an [OpenStreetMap](https://openstreetmap.org/) Background*
+
 ## background
 We needed high resolution historical data on where our buses were.  It's very important to scheduling, troubleshooting issues, and performance management.
 
