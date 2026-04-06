@@ -12,6 +12,7 @@ import datablob
 from datetime import datetime
 import duckdb
 import simple_env as se
+import uuid
 from zoneinfo import ZoneInfo
 
 RESULT_DATASET_NAME = "openavl_public_history"
@@ -45,7 +46,7 @@ OPENAVL_DATA_SOURCE = se.get("OPENAVL_DATA_SOURCE")
 if not OPENAVL_DATA_SOURCE:
     raise Exception("[openavl-public-history] missing OPENAVL_DATA_SOURCE")
 
-OUTPUT_FILE = "data.parquet"
+OUTPUT_FILE = str(uuid.uuid4()) + ".parquet"
 
 con = duckdb.connect()
 
