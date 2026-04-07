@@ -26,7 +26,7 @@ The pipeline runs approximately every hour.
 - [geoparquet](https://gocarta.s3.us-east-2.amazonaws.com/public/data/openavl_public_history/v1/data.parquet)
 
 ## preview links
-- You can query the data with SQL using [duckdb](https://shell.duckdb.org/#queries=v0,CREATE-TABLE-dataset-AS-SELECT-*-FROM-'s3%3A%2F%2Fgocarta%2Fpublic%2Fdata%2Fopenavl_public_history%2Fv1%2Fdata.parquet'~,Describe-dataset~,SELECT-timestamp%2C-latitude%2C-longitude-FROM-dataset-WHERE-vehicle_id-%3D-'0135'-ORDER-BY-timestamp-DESC-LIMIT-10~).
+- You can query the data with SQL using [duckdb](https://shell.duckdb.org/#queries=v0,CREATE-TABLE-dataset-AS-SELECT-*-FROM-'s3%3A%2F%2Fgocarta%2Fpublic%2Fdata%2Fopenavl_public_history%2Fv1%2Fdata.parquet'~,Describe-dataset~,SET-timezone-%3D-'America%2FNew_York'~,SELECT-to_timestamp(timestamp)%3A%3ADATETIME-as-timestamp%2C-latitude%2C-longitude-FROM-dataset-WHERE-vehicle_id-%3D-'0135'-ORDER-BY-timestamp-DESC-LIMIT-10~).
 
 ## support
 Post an issue [here](https://github.com/gocarta/openavl-public-history/issues) or email the package author at DanielDufour@gocarta.org.
